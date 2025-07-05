@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #b3d4fc;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      position: relative;
+    }
+    
+    .container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 0;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    
+    .left img {
+      height: 350px;
+      display: block;
+      position: relative;
+      margin-right: -30px;
+      z-index: 2;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .input-box i {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      color: #555;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px 10px 10px 35px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      outline: none;
+      box-sizing: border-box;
+      background: transparent;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #99cfff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #4da3ff;
+    }
+
+    .right-leaf {
+      position: absolute;
+      bottom: 0;
+      right: -80px;
+      height: 130px;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="A lady (1).png" alt="Girl Illustration" />
+    </div>
+    <div class="form-container">
+      <h2>New Account ?</h2>
+      <form>
+        <div class="input-box">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+        <div class="input-box">
+          <i class="fa fa-phone"></i>
+          <input type="text" placeholder="Phone Number" required>
+        </div>
+        <div class="input-box">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Mail" required>
+        </div>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <img src="Screenshot 2025-07-05 003323.png" class="right-leaf" alt="Right Leaf" />
+  </div>
+</body>
+</html>
